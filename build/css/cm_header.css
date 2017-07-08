@@ -1,0 +1,16 @@
+body {
+  background-color: #ffffff;
+  color: #282828;
+  font-size: 16px; }
+  body .body {
+    position: relative; }
+    body .body .coverpage {
+      display: block;
+      width: 100%; }
+      body .body .coverpage .coverpage-content {
+        display: block; }
+        body .body .coverpage .coverpage-content .coverpage-content-title {
+          margin: auto; }
+          body .body .coverpage .coverpage-content .coverpage-content-title h1 {
+            color: red;
+            text-align: center; }
