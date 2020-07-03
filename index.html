@@ -1,43 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>constant - codemario</title>
-  <link rel="stylesheet" href="./build/css/build.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:site_name" content="codesmario">	
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.codesmario.com">
+	<meta property="og:description" content="Hola, soy mario y este es mi sitio web codesmario.">
+    <meta property="og:keywords" content="códigos,mario,codesmario" >
+    
+    <title>codesmario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        /* Cursor */
+        #typed {
+            font-size: 100px !important;
+            text-align: center;
+            font-family: 'Anton', sans-serif;
+            color: #FFF;
+            letter-spacing: 10px;
+        }
+        body {
+            background-color: #0c0a0a;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height:50vw;
+        }
+    </style>
 </head>
 <body>
-	<!-- header -->
-	<header>		
-	</header>
-	
-	<!-- body -->
-	<div class="body">
-		<!-- coverpage -->
-		<div class="coverpage">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-12 col-xl-12">
-						<div class="coverpage-content">
-							<div class="coverpage-content-title">
-								<h1>
-									codemario
-								</h1>						
-							</div>
-							<div class="coverpage-content-arrow">
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- coverpage -->
-	</div>
-	
-	<!-- footer -->
-	<footer>		
-	</footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script>
+        $(function() {
+            // 
+            $("#typed").typed({
+                strings: [ "codesmario", "em mantenimiento..."],
+                typeSpeed: 30,
+                callback: function(){
+                    // shift();
+                }
+            });
+            // 
+        });
+    </script>
+
+
+    <div class="container">
+        <div class="container-head">
+            <h1 id="typed"></h1>
+        </div>
+        <div class="container-foot">
+
+        </div>
+    </div>
+
+ 
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "name": "codemario",
+        "alternateName": "Códigos de mario",
+        "url" : "http://www.codesmario.com/",
+        "sameAs": [
+            "https://www.facebook.com/codemario/",
+            "https://www.twitter.com/codesmario/",
+            "https://www.instagram.com/codesmario/"
+        ]
+    }
+    </script>
 </body>
 </html>
