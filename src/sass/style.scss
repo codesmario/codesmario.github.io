@@ -1,0 +1,30 @@
+@import './variables.scss';
+@import './lib.scss';
+
+body {
+    background-color: $black-color;
+    position: relative;
+}
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height:50vw;
+}
+
+ /* Cursor */
+ #typed {
+    font-size: 100px !important;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: $gray-color;
+    letter-spacing: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    #typed {
+        font-size: 18px !important;
+    }
+}

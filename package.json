@@ -1,20 +1,36 @@
 {
-  "name": "codesmario",
+  "name": "codesmario.github.io",
   "version": "1.0.0",
-  "description": "codemario_web_site",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch --mode development"
   },
-  "author": "codesmario",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesmario/codesmario.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codesmario/codesmario.github.io/issues"
+  },
+  "homepage": "https://github.com/codesmario/codesmario.github.io#readme",
   "devDependencies": {
-    "font-awesome": "^4.7.0",
-    "gulp-install": "^1.1.0",
-    "gulp-sass": "^3.2.1"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0"
+    "bootstrap": "^4.5.0",
+    "css-loader": "^3.6.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.9",
+    "sass-loader": "^9.0.0",
+    "style-loader": "^1.2.1"
   }
 }
