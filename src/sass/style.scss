@@ -2,29 +2,181 @@
 @import './lib.scss';
 
 body {
+    font-family: 'Spartan', sans-serif;
     background-color: $black-color;
     position: relative;
+
+    color: #b3b2b2;
+    letter-spacing: 1.5px;
 }
-.container {
-    position: relative;
+.page {
+    padding: 5em 0;
+}
+.lateral {
+    border-right: 1pt solid $gray-color;
+}
+.section {
+    padding: 0 2.5em;
+}
+// ===== main ====
+.main {
+    margin-bottom: 60px;
+    .main-head {
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: #f6f6f6;
+    }
+    .main-subhead {
+        text-align: center;
+        margin-bottom: 15px;
+        color: #dadada;
+    }
+    .main-abs {
+        // text-align: center;
+        color: #888886;
+    }
+}
+// end
+
+// ===== block ====
+.block {
+
+    .block-head {
+        h3 {
+            font-size: 20px !important;
+            font-weight: 500;
+            color: #c7c6c6;
+        }
+        span {
+            display: block;
+            width: 10%;
+            border-bottom: 1.4pt solid yellow;
+        }
+    }
+    .block-body {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        p {
+            text-align: justify;
+            color: #9e9e9d;
+        }
+        ol {
+            padding: 0 !important;
+            li {
+                padding-left: 15px;
+                list-style: none;
+                position: relative;
+                margin-bottom: 20px;
+                &:before {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    width: 0; 
+                    height: 0; 
+                    left: 0px;
+                    top: 6px;
+                    border-top: 6px solid transparent;
+                    border-bottom: 6px solid transparent;
+                    border-left: 6px solid yellow;
+                }
+            }
+        }
+        .item {
+            .item-cursive {
+                font-style: italic;
+                letter-spacing: normal;
+            }
+            .item-bold {
+                font-weight: bold;
+            }
+            .item-regular {
+                font-size: 14px;
+                letter-spacing: normal;
+            }
+        }
+
+        ul {
+            padding: 0 !important;
+            li {
+                padding-left: 15px;
+                list-style: none !important;
+                margin-bottom: 10px;
+                i {
+                    width: 15px;
+                }
+                span {
+                    display: inline;
+                    margin-left: 10px;
+
+                }
+            }
+        }
+        // ========
+        hr {
+            margin-top: 55px !important;
+            width: 70%;
+            border-top: 1px solid #fff !important;
+        }
+        ul.networking {
+            display: flex;
+            li {
+                padding-right: 15px;
+               i {
+                   color: #9e9e9d;
+                   font-size: 25px;
+               }
+           } 
+        }
+    }
+}
+// end
+
+.abilities {
     display: flex;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-    height:50vw;
+    margin-bottom: 15px;
+    .abilities-name {
+        width: 30%;
+    }
+    .abilities-bar {
+        color: #000!important;
+        background-color: #373736;
+        border-radius: 16px;
+        width: 70%;
+        position: relative;
+        height: 10px;
+        display: block;
+        .bar-progress {
+            content: " ";
+            color: #b3b2b2!important;
+            background-color: #b3b2b2!important;        
+            color: #b3b2b2;
+            border-radius: 16px;
+            padding: 1px 4px;
+            height: 10px;
+        }
+    }
 }
 
- /* Cursor */
- #typed {
-    font-size: 100px !important;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    color: $gray-color;
-    letter-spacing: 10px;
+.vw-mobile {
+    display: none;
 }
 
 @media only screen and (max-width: 900px) {
     #typed {
         font-size: 18px !important;
+    }
+    .vw-desktop {
+        display: none;
+    }
+    
+    .vw-mobile {
+        display: block;
+    }
+
+    .lateral {
+        border: none;
     }
 }

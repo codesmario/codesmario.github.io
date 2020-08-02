@@ -1,15 +1,12 @@
 import '../sass/style.scss';
 
 const $ = require('jquery');
+const AOS = require('aos');
 
+AOS.init();
+// 
 $(function() {
     // 
-    $("#typed").typed({
-        strings: [ "codesmario", "en mantenimiento..."],
-        typeSpeed: 30,
-        callback: function(){
-            // shift();
-        }
-    });
+    console.log("codesmario ...");
     // 
 });
