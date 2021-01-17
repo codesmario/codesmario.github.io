@@ -7,11 +7,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist/js'),
         filename: 'bundle.js'
     },
-    devServer: {
-        port: 9001,
-        headers: { "Access-Control-Allow-Origin": "*" },
-    },
-    devtool: "inline-source-map",
     module: {
         rules: [
           {
