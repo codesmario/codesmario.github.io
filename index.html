@@ -23,7 +23,6 @@
                 <div class="col-md-12 justify-content-center">
                     <div class="row">
                         <div class="col-md-6 lateral" data-aos="fade-right" data-aos-duration="2000">
-                            
                             <div class="section">
                                 <div class="main">
                                     <div class="main-photo"></div>
@@ -299,7 +298,20 @@
 
    </div>
 
- 
+   <script>
+       const queryString    =   window.location.search;
+       const urlParams      =   new URLSearchParams(queryString);
+       const video          =   urlParams.get('video')
+        switch (video) {
+            case 'video_01':
+                window.location.href = 'https://youtu.be/myF8zVc7cro'
+                break;
+            case 'video_02':
+                window.location.href = 'https://youtu.be/epmh8VXM8JA'
+                break;
+        }
+
+   </script>
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
