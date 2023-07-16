@@ -88,9 +88,9 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 							<li class="fh5co-active">
 								<a href="servicios.html">Servicios</a>
 							</li>
-							<li>
+							<!-- <li>
 								<a href="experiencia.html">Experiencia</a>
-							</li>
+							</li> -->
 						</ul>
 					</nav>
 				</div>
@@ -211,12 +211,20 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 										<textarea placeholder="Mensaje" id="message" name="message" class="form-control input-lg" rows="3"></textarea>
 									</div>	
 								</div>
+								
 								<div class="col-md-6">
 									<div class="form-group">
 										<input type="submit" class="btn btn-primary btn-md" id="btnSendEmail" value="Enviar">
 									</div>	
 								</div>
-								
+
+								<div class="col-md-12">
+									<div class="form-group">
+										<div class="alert alert-warning" id="alertConsulta" style="display: none;">
+											<small>Existen campos vacios, completa el formulario</small>
+										</div>
+									</div>
+								</div>
 								
 							</form>	
 						</div>
@@ -315,6 +323,35 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 			let btnSendEmail = document.getElementById('btnSendEmail');
 			window.onload = function() {
 				document.getElementById('frmContactarEmail').addEventListener('submit', function(event) {
+					event.preventDefault();
+					const user_name =  document.getElementById('user_name');
+					const user_email =  document.getElementById('user_email');
+					const message =  document.getElementById('message');
+					const alertMessage = document.getElementById('alertConsulta');
+
+					if (user_name.value.trim() == '') {
+						alertMessage.style.display = 'block'
+						setTimeout(() => {
+							alertMessage.style.display = 'none'
+						}, 3000);
+						return
+					}
+					if (user_email.value.trim() == '') {
+						alertMessage.style.display = 'block'
+						setTimeout(() => {
+							alertMessage.style.display = 'none'
+						}, 3000);
+						return
+					}
+					if (message.value.trim() == '') {
+						alertMessage.style.display = 'block'
+						setTimeout(() => {
+							alertMessage.style.display = 'none'
+						}, 3000);
+						return
+					}
+
+
 					event.preventDefault();
 					btnSendEmail.value = 'Enviando...'
 					const serviceID = 'service_djxa1kh';
