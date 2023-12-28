@@ -37,8 +37,8 @@ DESIGNED & DEVELOPED by FREEHTML5.CO
 
 
 // Override Variables
-$brand-primary: #5C8E5B;
-$brand-success: #00e195;
+$brand-primary: #163f88;
+$brand-success: #163f88;
 $brand-info: #0bbff2;
 $brand-warning: #ffd042;
 $brand-danger: #e02745;
@@ -64,6 +64,7 @@ $sans-serif : 'PT Mono', sans-serif;
 
 
 body {
+	background-color: #f5f5f5;
 	font-family: $sans-serif;
 	font-size: 16px;
 	line-height: 26px;
