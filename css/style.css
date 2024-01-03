@@ -281,6 +281,15 @@ pre {
     float: right;
   }
 }
+#fh5co-main-nav .nav-doc {
+  background-color: #163f88;
+}
+#fh5co-main-nav .nav-doc :hover a {
+  color: #ffffff !important;
+}
+#fh5co-main-nav .nav-doc a {
+  color: #ffffff;
+}
 
 #fh5co-intro {
   margin-bottom: 2em;

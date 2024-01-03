@@ -301,6 +301,17 @@ pre {
 			float: right;
 		}
 	}
+	.nav-doc {
+		background-color: $brand-primary;
+		:hover{
+			a {
+				color: $brand-white !important;
+			}
+		}
+		a {
+			color: $brand-white;
+		}
+	}
 }
 
 #fh5co-intro {
